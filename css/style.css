@@ -1,0 +1,128 @@
+.skip{
+     position:absolute;
+     top:-50px;
+     background: #FFCB05;
+}
+
+.skip:focus{
+     position:absolute;
+     top:20px;
+}
+a:hover {
+     text-decoration: underline;
+}
+
+a:focus {
+     text-decoration: underline;
+}
+
+:focus{
+     border:lightgray 5px solid;
+     border-radius: 20px;
+}
+.current{
+     text-decoration: underline;
+}
+main{
+     display: grid;
+     grid-template-columns: 2fr 2fr 5fr 2fr 2fr;
+}
+h1,h2,h3,h4,h5,p,a,li{
+     font-family: "Nunito sans", Helvetica, sans-serif;
+     color: #00274C;
+     padding:5px;
+     margin:10px;
+
+}
+main>div:nth-child(odd){
+     grid-column: 1/4;
+}
+main>div:nth-child(even){
+     grid-column: 2/-1;
+}
+/*main>div:last-child{
+     grid-column: 1/-1;
+}*/
+h1{
+     font-size:30px;
+     padding: 10px;
+     background-color: #00274C ;
+     border: #FFCB05 solid 5px;
+     color: #FFCB05;
+     border-radius: 20px;
+     grid-column: 1/-1;
+}
+
+h2{
+     font-size:26px;
+}
+
+h3{
+     font-size:24px;
+}
+
+h4{
+     font-size:22px;
+}
+
+h5{
+     font-size:20px;
+}
+
+p,a,li,nav>ul>li>a{
+     font-size:18px;
+}
+nav>ul>li>a{
+     text-decoration: none;
+     font-weight: bold;
+}
+nav{
+     background-color: #FFCB05;
+     border: #00274C 5px solid;
+     border-radius: 20px;
+     padding:5px;
+     margin-bottom: 10px;
+}
+
+div{
+     padding: 15px ;
+     margin: 10px;
+     border:#00274C solid 5px;
+     border-radius: 20px;
+     background-color: #FFCB05;
+}
+footer{
+     border: #00274C solid 5px;
+     border-radius: 20px;
+     background: #FFCB05;
+}
+footer p,footer p a{ 
+     padding: 5px;    
+     font-size: 15px;
+
+}
+
+img{
+     border: #00274C solid 5px; 
+     border-radius: 20px;
+     max-width: 90%;
+     overflow: hidden;
+     justify-items:center;
+     align-items:center;
+     grid-column: 1/4;
+     object-fit: scale-down;
+     margin-left: 5px;
+}
+.title{
+     grid-column: 1/-1;
+     border:white solid 5px;
+     border-radius: 20px;
+     padding: 20px;
+     background-color: #00274C;
+     color: #FFCB05;
+}
+.in_title{
+     background: white;
+     border: 2px navy solid;
+     border-radius: 25px;
+}
