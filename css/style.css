@@ -19,13 +19,16 @@ a:focus {
 :focus{
      border:lightgray 5px solid;
      border-radius: 20px;
+     
 }
 .current{
-     text-decoration: underline;
+     border: solid white 2px;
+     border-radius: 4px;
+     background:white;
 }
 main{
      display: grid;
-     grid-template-columns: 2fr 2fr 5fr 2fr 2fr;
+     grid-template-columns: 1fr 1fr 10fr 1fr 1fr;
 }
 h1,h2,h3,h4,h5,p,a,li{
      font-family: "Nunito sans", Helvetica, sans-serif;
@@ -35,10 +38,10 @@ h1,h2,h3,h4,h5,p,a,li{
 
 }
 main>div:nth-child(odd){
-     grid-column: 1/4;
+     grid-column: 1/-1;
 }
 main>div:nth-child(even){
-     grid-column: 2/-1;
+     grid-column: 2/-2;
 }
 /*main>div:last-child{
      grid-column: 1/-1;
@@ -50,7 +53,7 @@ h1{
      border: #FFCB05 solid 5px;
      color: #FFCB05;
      border-radius: 20px;
-     grid-column: 1/-1;
+     grid-column: 2/-2;
 }
 
 h2{
@@ -107,11 +110,12 @@ img{
      border-radius: 20px;
      max-width: 90%;
      overflow: hidden;
+     grid-column: 1/-1;
      justify-items:center;
      align-items:center;
-     grid-column: 1/4;
+     margin-left: 15px;
      object-fit: scale-down;
-     margin-left: 5px;
+
 }
 .title{
      grid-column: 1/-1;
